@@ -1,0 +1,27 @@
+/* ============ Settings ============ */
+$container-width: 1200px;
+$image-path: '~src/assets/images/';
+
+/* ============ Fonts ============ */
+$font-base: 'Poppins', sans-serif;;
+
+/* ============ Colors ============ */
+$text: #333333;
+$bg: #F1F4F8;
+
+$color-1: #23a7b5;
+$color-2: #3fa3c4;
+$color-3: #093d4e;
+$color-4: #0a4b61;
+$color-5: #FE6B8B;
+$color-6: #FF8E53;
+
+$gradient-1: linear-gradient(135deg, #FF0A6C 0%, #2D27FF 100%);
+$gradient-2: linear-gradient(135deg, #FF95FB 0%, #A293FF 100%);
+/* ============ Breakpoints ============ */
+$breakpoint-xxl: 1000px;
+$breakpoint-xl: 700px;
+$breakpoint-l: 600px;
+$breakpoint-m: 500px;
+$breakpoint-s: 400px;
+$breakpoint-xs: 320px;

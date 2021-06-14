@@ -1,0 +1,119 @@
+footer {
+    background-color: white;
+}
+
+.footer {
+    &__container {
+        max-width: 1250px;
+        padding-top: 54px;
+    }
+    &__row [class*='col-'] {
+        padding: 6px;
+    }
+    &__logo-description {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #4f5566;
+        letter-spacing: -0.003em;
+        margin-top: 10px;
+        max-width: 172px;
+    }
+    &__network-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.003em;
+        color: #23262f;
+        margin-bottom: 20px;
+        white-space: nowrap;
+    }
+    &__network-item {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #4f5566;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+        &.item-email img {
+            display: flex;
+            margin-right: 3px;
+        }
+    }
+    &__social-row {
+        max-width: 400px !important;
+    }
+    &__social-row [class*='col-'] {
+        padding: 3px;
+        text-align: center;
+        img {
+            margin-bottom: 2px;
+        }
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            display: block;
+            text-align: center;
+            color: #777e90;
+        }
+    }
+}
+
+.copy-right {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #4f5566;
+    text-align: center;
+    margin-top: 75px;
+    padding-bottom: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        &__row > .col-3,
+        &__row > .col-2 {
+            width: 33.33%;
+        }
+        &__row > .col-4 {
+            width: 100%;
+        }
+    }
+    .copy-right {
+        margin-top: 35px;
+    }
+}
+
+// @media screen and (max-width: $breakpoint-xl) {
+//     .footer {
+//         &__row >.col-3, &__row >.col-2 {
+//             width: 33.33%;
+//         }
+//         &__row >.col-4 {
+//             width: 100%;
+//         }
+//     }
+// }
+
+@media screen and (max-width: $breakpoint-m) {
+    .footer {
+        &__row > .col-3 {
+            width: 50%;
+        }
+        &__row > .col-4,
+        &__row > .col-2 {
+            width: 100%;
+        }
+        &__social-row {
+            max-width: 300px;
+            > div {
+                width: 20%;
+            }
+        }
+    }
+}

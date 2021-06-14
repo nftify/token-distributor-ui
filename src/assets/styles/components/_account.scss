@@ -1,0 +1,71 @@
+.account {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__close {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    font-size: 22px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__item {
+    width: 48%;
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #f7f7f7;
+    color: #5a5e67;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      color: #ff527c;
+      border-color: #ff527c;
+    }
+  }
+
+  &__name {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    width: 34px;
+    height: 34px;
+    margin-right: 12px;
+    background-size: cover;
+
+    &.metamask {
+      background-image: url($image-path + 'logos/metamask.svg');
+    }
+
+    &.wallet-connect {
+      width: 36px;
+      height: 20px;
+      background-image: url($image-path + 'logos/wallet-connect.svg');
+    }
+
+    &.wallet-link {
+      border-radius: 10px;
+      background-image: url($image-path + 'logos/wallet-link.svg');
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-s) {
+    &__name {
+      font-size: 10px;
+    }
+  }
+}

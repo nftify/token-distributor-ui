@@ -1,0 +1,182 @@
+.home {
+    position: relative;
+    min-height: 100vh;
+    &__layout {
+        .decor.decor--bot-right-home {
+            bottom: -150px;
+            right: -265px;
+        }
+    }
+    &__content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    &__logo {
+        display: block;
+        margin: auto;
+    }
+    &__side-wrap {
+        width: 412px;
+        margin: 52px auto 20px;
+        padding: 50px 30px 30px;
+        background-color: white;
+        box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 15px;
+        text-align: center;
+        transition: all 0.3s;
+        max-width: 95%;
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.003em;
+        color: #23262f;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 11px;
+        line-height: 27px;
+        color: #23262f;
+    }
+
+    &__desc {
+        padding: 0 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: -0.003em;
+        color: #4f5566;
+        margin-bottom: 47px;
+    }
+
+    &__address {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    &__disconnect {
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: 600;
+        display: inline-block;
+        transition: all 0.3s;
+
+        &:hover {
+            color: #ff527c;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-weight: 600;
+        background-color: #efe7e7;
+        padding: 6px 20px;
+        border-radius: 5px;
+        transition: all 0.3s;
+
+        &:hover {
+            color: #fe6b8b;
+        }
+    }
+
+    &__works-container {
+        margin-top: 120px;
+        margin-bottom: 120px;
+        position: relative;
+        max-width: 1270px;
+    }
+    &__works-title {
+        text-align: center;
+        margin-bottom: 46px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    &__works-icon-wrap {
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        background-color: #4f5566;
+        @include flexBox();
+        margin: auto;
+    }
+    &__works-item-title {
+        margin-top: 32px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 4px;
+        color: #23262f;
+        letter-spacing: -0.003em;
+    }
+    &__works-item-description {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #4f5566;
+        letter-spacing: -0.003em;
+        margin-bottom: 18px;
+    }
+    &__works-item-list-description {
+        padding-left: 24px;
+        li {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: #4f5566;
+            letter-spacing: -0.003em;
+            &::marker {
+                font-size: 0.7em;
+            }
+        }
+    }
+    // @media screen and (max-width: 700px) {
+    //     margin: 50px auto 10px;
+    //     padding: 20px 15px;
+    // }
+}
+
+@media screen and (max-width: $breakpoint-xl) {
+    .home {
+        &__works-row {
+          max-width: 500px;
+          margin: auto;
+        }
+        &__content {
+          max-width: 500px;
+          padding: 0 14px;
+          width: 100%;
+        }
+        &__side-wrap {
+          width: 100%;
+          max-width: 100%;
+          margin-top: 25px;
+        }
+        &__works-row [class*='col-']{
+          width: 100%;
+        }
+        &__desc{
+          font-size: 14px;
+        }
+    }
+}
